@@ -15,4 +15,15 @@ public class Arrival : MonoBehaviour
     {
         
     }
+
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     Debug.Log(message:"Arrivée Trigger !");
+    // }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(message:"Arrivée Collision !");
+    }
+
 }

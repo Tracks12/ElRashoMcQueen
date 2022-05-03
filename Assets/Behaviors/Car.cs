@@ -13,6 +13,11 @@ public class Car : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKey(KeyCode.LeftArrow))  {
+            GetComponent<Rigidbody>().MovePosition(transform.position + Vector3.left*0.1f);
+        }
+        if(Input.GetKey(KeyCode.RightArrow)) {
+            GetComponent<Rigidbody>().MovePosition(transform.position + Vector3.right*0.1f);
+        }
     }
 }
