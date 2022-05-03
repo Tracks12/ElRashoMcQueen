@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class buttonPlay : MonoBehaviour
 {
-
    public void MoveToScene(int sceneID)
     {
         SceneManager.LoadScene(sceneID);
     }
-    
 }
